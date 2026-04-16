@@ -158,12 +158,6 @@ function M.setup(opts)
     desc = "Apply a patch from a new buffer",
     nargs = 0
   })
-
-  -- Also create lowercase alias
-  vim.api.nvim_create_user_command("code", code_command, {
-    desc = "Apply a patch from a new buffer",
-    nargs = 0
-  })
 end
 
 return M
